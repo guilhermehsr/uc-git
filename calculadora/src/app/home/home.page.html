@@ -1,0 +1,89 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Calculadora
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Calculadora</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+  
+    <h6>{{mem}}</h6>
+    <h1>{{visor}}</h1>
+
+    <div id="grid">
+    <ion-grid>
+
+      <ion-row>
+      <ion-col>
+      <ion-button (click)="digito('7')" color="light">7</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-button (click)="digito('8')" color="light">8</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-button (click)="digito('9')" color="light">9</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-button (click)="cls()" color="dark">C</ion-button>
+      </ion-col>
+      </ion-row>
+      
+      <ion-row>
+      <ion-col>
+      <ion-button (click)="digito('4')" color="light">4</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-button (click)="digito('5')" color="light">5</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-button (click)="digito('6')" color="light">6</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-button (click)="op('-')" color="medium">-</ion-button>
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+      <ion-col>
+      <ion-button (click)="digito('1')" color="light">1</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-button (click)="digito('2')" color="light">2</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-button (click)="digito('3')" color="light">3</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-button (click)="op('+')" color="medium">+</ion-button>
+      </ion-col>
+      </ion-row>
+      
+      <ion-row>
+      <ion-col>
+      <ion-button (click)="op('x')" color="medium">x</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-button (click)="digito('0')" color="light">0</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-button (click)="op('/')" color="medium">/</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-button (click)="calc()" color="dark">=</ion-button>
+      </ion-col>
+      </ion-row>
+                
+    </ion-grid>   
+
+    </div>
+
+  </div>
+</ion-content>
