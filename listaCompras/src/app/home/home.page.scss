@@ -1,0 +1,26 @@
+#all {
+  text-align: justify;
+  position:relative;
+  top: 3%;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://static.wixstatic.com/media/b903fd_24eafbe358b740e0a32b0932755b4629~mv2.gif");
+  background-position: center;
+  background-size: cover;
+  border-style:none;
+  border-radius: 6%;
+  font-weight: bold;
+  color: rgb(231, 228, 255);
+}
+
+ion-input {
+  text-align: justify;
+  background-color: #30273d;
+  color: rgb(231, 228, 255);
+}
+
+ion-col {
+  text-align: justify;
+  background-color: #30273d33;
+  color: rgb(231, 228, 255);
+}
